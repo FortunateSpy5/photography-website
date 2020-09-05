@@ -44,7 +44,6 @@ nav {
   position: fixed;
   top: 0px;
   display: grid;
-  background: #5C7237;
   font-size: 1.2rem;
   grid-template-columns: 5fr 2fr;
   grid-template-rows: auto auto;
@@ -230,7 +229,7 @@ button {
 /*About*/
 
 .about {
-  background: #204054;
+  background: #183E55;
 }
 
 .about-img {
@@ -245,6 +244,12 @@ button {
   color: white;
 }
 
+
+/* Contact */
+
+.contact {
+  background: #E89B26;
+}
 
 @media screen and (min-width: 768px) {
   nav {
@@ -319,7 +324,7 @@ button {
 
   .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding: 0px 10%;
   }
 
@@ -329,7 +334,7 @@ button {
   }
 
   .about .title, .about .subtitle {
-    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
@@ -372,6 +377,6 @@ button {
 
   .about .title, .about .subtitle {
     width: 80%;
-    margin-left: 15%;
+    margin-right: 15%;
   }
 }
