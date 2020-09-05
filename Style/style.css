@@ -36,9 +36,15 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.svg {
+  filter: invert(1);
+  transition: filter 0.5s ease-in-out;
+}
+
 
 /*Navbar*/
 nav {
+  background: #5C7237;
   z-index: 1;
   width: 100%;
   position: fixed;
@@ -47,6 +53,7 @@ nav {
   font-size: 1.2rem;
   grid-template-columns: 5fr 2fr;
   grid-template-rows: auto auto;
+  transition: background 0.5s ease-in-out;
 }
 
 .logo, .burger {
@@ -65,7 +72,7 @@ nav {
   font-size: 1.3em;
 }
 
-.logo img {
+.logo .svg {
   height: 2em;
 }
 
@@ -89,6 +96,7 @@ nav {
   color: white;
   letter-spacing: 0.2em;
   font-weight: 600;
+  transition: color 0.5s ease-in-out;
 }
 
 .socials {
@@ -99,7 +107,7 @@ nav {
   margin-top: 10px;
 }
 
-.socials img {
+.socials .svg {
   height: 1.5em;
 }
 
@@ -108,7 +116,7 @@ nav {
   height: 0.16em;
   margin: 0.18em;
   background: white;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background 0.5s ease-in-out;
 }
 
 /*navbar animations*/
