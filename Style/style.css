@@ -44,7 +44,7 @@ nav {
   position: fixed;
   top: 0px;
   display: grid;
-  background: #637545;
+  background: #5C7237;
   font-size: 1.2rem;
   grid-template-columns: 5fr 2fr;
   grid-template-rows: auto auto;
@@ -216,7 +216,7 @@ button {
 /*Gallery*/
 
 .gallery {
-  background: #D0D761;
+  background: #CFD752;
 }
 
 .gallery .title {
@@ -230,7 +230,7 @@ button {
 /*About*/
 
 .about {
-  background: #2F4858;
+  background: #204054;
 }
 
 .about-img {
