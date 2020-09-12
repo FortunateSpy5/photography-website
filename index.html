@@ -1,92 +1,129 @@
 <!DOCTYPE html>
+
 <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="Style/style.css">
-		<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Special+Elite&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<nav class="nav-0" id="navbar">
-				<div class="logo">
-					<img src="Static/logo-black.svg" class="svg">
-				</div>
-				<ul class="nav-links">
-					<li class="nav-link hover link"><a href="#home-link">Home</a></li>
-					<li class="nav-link hover link"><a href="#gallery-link">Gallery</a></li>
-					<li class="nav-link hover link"><a href="#about-link">About</a></li>
-					<li class="nav-link hover link"><a href="#contact-link">Contact</a></li>
-					<li class="nav-link icons">
-						<ul class="socials">
-							<li class="hover"><a href="#"><img src="Static/facebook.svg" class="svg"></a></li>
-							<li class="hover"><a href="#"><img src="Static/twitter.svg" class="svg"></a></li>
-							<li class="hover"><a href="#"><img src="Static/instagram.svg" class="svg"></a></li>
-						</ul>
-					</li>
-				</ul>
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-			</nav>
-		</header>
-		<section class="intro" id="home-link">
-			<h1 class="title">Anish Photography</h1>
-			<p class="subtitle">
-				Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends am to detract. Forbade concern do private be. Offending residence but men engrossed shy. Pretend am earnest offered arrived company so on. Felicity informed yet had admitted strictly how you. 
-			</p>
-		</section>
-		<section class="gallery" id="gallery-link">
-			<img src="https://unsplash.it/720/480" class="gallery-img">
-			<div class="container">
-				<h1 class="title">Gallery</h1>
-				<p class="subtitle">
-				Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
-				</p>
-				<button class="gallery-button">Go</button>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Style/style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Courgette&family=Special+Elite&family=Ubuntu:wght@400;700&display=swap"
+		rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+		function SubForm() {
+			$.ajax({
+				url: 'https://api.apispreadsheets.com/data/1384/',
+				type: 'post',
+				data: $("#myForm").serializeArray(),
+				success: function () {
+					alert("Form Submitted")
+				},
+				error: function () {
+					alert("There was an error. Please try again.")
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<nav class="nav-0" id="navbar">
+			<div class="logo">
+				<img src="Static/logo-black.svg" class="svg">
 			</div>
-		</section>
-		<section class="about" id="about-link">
-			<img src="https://unsplash.it/480/720" class="about-img">
-			<div class="container">
-				<h1 class="title">About Anish</h1>
-				<p class="subtitle">
+			<ul class="nav-links">
+				<li class="nav-link hover link"><a href="#home-link">Home</a></li>
+				<li class="nav-link hover link"><a href="#gallery-link">Gallery</a></li>
+				<li class="nav-link hover link"><a href="#about-link">About</a></li>
+				<li class="nav-link hover link"><a href="#contact-link">Contact</a></li>
+				<li class="nav-link icons">
+					<ul class="socials">
+						<li class="hover"><a href="https://www.facebook.com/anish.c.photography" target="_blank"><img
+									src="Static/facebook.svg" class="svg"></a></li>
+						<li class="hover"><a href="#"><img src="Static/twitter.svg" class="svg"></a></li>
+						<li class="hover"><a href="https://www.instagram.com/_.anish._.c._.photography._/?hl=en"
+								target="_blank"><img src="Static/instagram.svg" class="svg"></a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<section class="intro" id="home-link">
+		<h1 class="title">Anish Photography</h1>
+		<p class="subtitle">
+			Excited him now natural saw passage offices you minuter. At by asked being court hopes. Farther so friends
+			am to detract. Forbade concern do private be. Offending residence but men engrossed shy. Pretend am earnest
+			offered arrived company so on. Felicity informed yet had admitted strictly how you.
+		</p>
+	</section>
+	<section class="gallery" id="gallery-link">
+		<img src="https://unsplash.it/720/480" class="gallery-img">
+		<div class="container">
+			<h1 class="title">Gallery</h1>
+			<p class="subtitle">
+				Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
+			</p>
+			<button class="gallery-button">Go</button>
+		</div>
+	</section>
+	<section class="about" id="about-link">
+		<img src="https://unsplash.it/480/720" class="about-img">
+		<div class="container">
+			<h1 class="title">About Anish</h1>
+			<p class="subtitle">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.
-				</p>
-			</div>
-		</section>
-		<section class="contact" id="contact-link">
-			<div class="container get">
-				<h1 class="title">Get in Touch</h1>
-				<h3 class="subtitle">Please fill out the form and I will be in touch as soon as possible</h3>
-				<form action="" method="" class="contact-form">
-					<input type="name" class="contact-input" value="Name" name="name">
-					<input type="email" class="contact-input" value="Email" name="email">
-					<textarea class="contact-input text-input" name="text">Message</textarea>
-					<button class="contact-button">Submit</button>
-				</form>
-			</div>
-			<div class="container info">
-				<h1 class="title">My Contact Info</h1>
-				<div>
-					<div class="email">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
-						<div class="subtitle">examples@gmail.com</div>
-					</div>
-					<div class="phone">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
-						<div class="subtitle">+91 **********</div>
-					</div>
+			</p>
+		</div>
+	</section>
+	<section class="contact" id="contact-link">
+		<div class="container get">
+			<h1 class="title">Get in Touch</h1>
+			<h3 class="subtitle">Please fill out the form and I will be in touch as soon as possible</h3>
+			<form class="contact-form" id="myForm" action="#">
+				<input type="name" class="contact-input" placeholder="Name" name="name">
+				<input type="email" class="contact-input" placeholder="Email" name="email">
+				<textarea class="contact-input text-input" placeholder="Message" name="message"></textarea>
+				<button class="contact-button" onclick="SubForm()">Submit</button>
+			</form>
+		</div>
+		<div class="container info">
+			<h1 class="title">My Contact Info</h1>
+			<div>
+				<div class="email">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
+						</svg>
+					<div class="subtitle">examples@gmail.com</div>
+				</div>
+				<div class="phone">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path
+							d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z" />
+						</svg>
+					<div class="subtitle">+91 **********</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
+	<footer>
+		<div>&#169; 2020 Anish Photography</div>
+		<div>Website developed by <a href="https://github.com/FortunateSpy5"
+				target="_blank"><span>FortunateSpy5</span></a></div>
+	</footer>
 	<script type="text/javascript" src="app.js"></script>
-	</body>
+</body>
+
 </html>

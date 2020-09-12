@@ -16,7 +16,7 @@ const navSlide = () => {
 				link.style.animation = '';
 			}
 			else {
-				link.style.animation = `nav-link-animation ${0.3 + index / 8}s ease-out 0.4s`;
+				link.style.animation = "nav-link-animation " + (0.3 + index / 8) + "s ease-out 0.4s";
 			}
 		});
 	});
@@ -26,28 +26,28 @@ let flag2 = true;
 
 window.onscroll = () => {
 	if (this.scrollY >= window.innerHeight * 2.92)
-		navbar.style.background = `#183E55`;
+		navbar.style.background = "#183E55";
 	else if (this.scrollY >= window.innerHeight * 1.92){
-		navbar.style.background = `#CFD752`;
+		navbar.style.background = "#CFD752";
 	}
   	else
-  		navbar.style.background = `#5C7237`;
+  		navbar.style.background = "#5C7237";
 
   	if (this.scrollY >= window.innerHeight * 1.92 && this.scrollY <= window.innerHeight * 2.92){
   		flag2 = true;
   		if (flag1) {
   			flag1 = false;
   			navAnchor.forEach((i, index) => {
-				i.style.color = `black`;
+				i.style.color = "black";
 			});
 
 			burger_div.forEach((i, index) => {
-				i.style.background = `black`;
+				i.style.background = "black";
 			});
 			
 			
 			svg.forEach((i, index) => {
-				i.style.filter = `none`;
+				i.style.filter = "none";
 			});
   		}
 	}
@@ -56,21 +56,27 @@ window.onscroll = () => {
 		if (flag2) {
 			flag2 = false;
 			navAnchor.forEach((i, index) => {
-				i.style.color = `white`;
+				i.style.color = "white";
 			});
 
 			burger_div.forEach((i, index) => {
-				i.style.background = `white`;
+				i.style.background = "white";
 			});
 		
 			svg.forEach((i, index) => {
-				i.style.filter = `none`;
-				i.style.filter = `invert(1)`;
+				i.style.filter = "none";
+				i.style.filter = "invert(1)";
 			});
 		}
 	}
 };
 };
+
+var form = document.getElementById("myForm");
+function handleForm(event) {
+  event.preventDefault();
+}
+form.addEventListener("submit", handleForm);
 
 
 navSlide();

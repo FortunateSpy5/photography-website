@@ -274,6 +274,8 @@ button {
 .contact .title {
   color: black;
   margin-bottom: 10px;
+  font-size: 2rem;
+  margin-top: 1em;
 }
 
 .contact .subtitle {
@@ -297,7 +299,7 @@ button {
   filter: drop-shadow(1px 1px 2px black);
   padding: 0.4em 0.5em;
   transition: all 0.2s ease;
-  color: grey;
+  outline: none;
 }
 
 .text-input {
@@ -311,6 +313,7 @@ button {
 
 .contact-button {
   margin: 0px auto;
+  outline: none;
 }
 
 .email, .phone {
@@ -320,6 +323,34 @@ button {
 
 .email svg, .phone svg {
   margin-right: 0.5em;
+}
+
+footer {
+  background: #183E55; 
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(160, 160, 160); 
+  font-family: "Courgette", cursive;
+}
+
+footer a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+footer a span{
+  transition: all 0.2s ease;
+}
+
+footer a span:hover {
+  color: #F0A534;
 }
 
 /* Footer */
@@ -414,6 +445,9 @@ button {
     transform: scale(1.02);
   }
 
+  .contact .title {
+    font-size: 3rem;
+    margin-top: 0;
 }
 
 
